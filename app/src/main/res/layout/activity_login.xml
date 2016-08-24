@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BottomUP"
+        android:id="@+id/applicationTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="It's time to get that rump on the stomp!"
+        android:id="@+id/applicationSlogan"
+        android:layout_below="@+id/applicationTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter Username"
+        android:ems="10"
+        android:id="@+id/loginView"
+        android:layout_above="@+id/passwordView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:text="Enter Password"
+        android:ems="10"
+        android:id="@+id/passwordView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Welcome!"
+        android:id="@+id/welcomeMessage"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/applicationSlogan"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/loginButton"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:onClick="accountLogin"
+        android:layout_below="@+id/passwordView"
+        android:layout_centerHorizontal="true"
+        android:background="#335577"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newAccountMessageTextView"
+        android:text="No account? Click the button below to create a new account"
+        android:layout_below="@id/loginButton"
+        android:layout_margin="15dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newAccountButton"
+        android:text="Create Account"
+        android:layout_below="@id/newAccountMessageTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="10dp"
+        android:background="#335577"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:onClick="createAccount"/>
+
+</RelativeLayout>

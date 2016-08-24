@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uk.ac.mmu.webmd.bottomup_version_10.OverviewActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Hello!"
+        android:id="@+id/customWelcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/goalsButton"
+        android:layout_marginTop="49dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/football_button"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/customWelcome"
+        android:layout_alignParentStart="true"
+        android:onClick="goalButton"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/progressButton"
+        android:layout_alignBottom="@+id/goalsButton"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/progress_button"
+        android:layout_marginRight="25dp"
+        android:onClick="progressButton"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/socialButton"
+        android:layout_marginBottom="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/goalsButton"
+        android:scaleType="fitXY"
+        android:background="@drawable/social_button"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/profileButton"
+        android:layout_alignBottom="@+id/socialButton"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/profile_button"
+        android:layout_marginRight="25dp"/>
+
+
+</RelativeLayout>
