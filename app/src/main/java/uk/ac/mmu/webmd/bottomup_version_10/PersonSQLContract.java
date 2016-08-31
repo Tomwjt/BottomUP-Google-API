@@ -16,5 +16,15 @@ public final class PersonSQLContract {
         public static final String PERSON_COLUMN_AGE = "age";
         public static final String PERSON_COLUMN_NAME = "name";
         public static final String PERSON_COLUMN_GENDER = "gender";
+        public static final String ACTIVITY_TABLE_NAME = "activity";
+        public static final String ACTIVITY_COLUMN_ID = "_id";
+        public static final String ACTIVITY_COLUMN_NAME = "name";
+        public static final String ACTIVITY_COLUMN_DATE = "date";
+        public static final String ACTIVITY_COLUMN_STILL = "still";
+        public static final String ACTIVITY_COLUMN_STANDING = "standing";
+        public static final String ACTIVITY_COLUMN_WALKING = "walking";
+        public static final String ACTIVITY_COLUMN_RUNNING = "running";
+        public static final String ACTIVITY_COLUMN_UNKNOWN = "unknown";
+
     }
 }

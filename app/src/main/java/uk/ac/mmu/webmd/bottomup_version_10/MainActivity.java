@@ -70,61 +70,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
 
     }
 
-    //    public void createAccount(View view){
-//        int age = 0;
-//        Person person;
-//        String name;
-//        String gender;
-//
-//        //Get persons age
-//        try {
-//            age = Integer.parseInt(ageField.getText().toString());
-//        }catch(Exception e){
-//            Toast displayAccountErrorMessage = Toast.makeText(this, "Invalid Age", Toast.LENGTH_LONG);
-//            displayAccountErrorMessage.show();
-//        }
-//
-//        //Get person name
-//        name = nameField.getText().toString();
-//        gender = "male";
-//        if(age > 0 && age < 120 && name.isEmpty() == false && gender.isEmpty() == false) {
-//            person = new Person(name, age, gender);
-//            dao.insertPerson(person);
-//        }else{
-//            Toast displayAccountErrorMessage = Toast.makeText(this, "Invalid Details", Toast.LENGTH_LONG);
-//            displayAccountErrorMessage.show();
-//        }
-//
-//    }
-
-//    public void displayAccount(View view){
-//
-//        int id = 1;
-//        //Need to add in an if(ArrayList == Empty) statement
-//
-//        try {
-//            id = Integer.parseInt(accountNum.getText().toString());
-//        } catch(Exception e){
-//            Toast displayAccountErrorMessage = Toast.makeText(this, "ID must only contain numbers.", Toast.LENGTH_LONG);
-//            displayAccountErrorMessage.show();
-//        }
-//
-//        try {
-//            Cursor c = dao.getPerson(id);
-//
-//                c.moveToFirst();
-//                int age = c.getInt(c.getColumnIndex("age"));
-//                accountNum.setText(age + "");
-//
-//                if (!c.isClosed()) {
-//                    c.close();
-//                }
-//        }catch(Exception e){
-//            Toast displayAccountErrorMessage = Toast.makeText(this, "Invalid ID", Toast.LENGTH_LONG);
-//            displayAccountErrorMessage.show();
-//        }
-//
-//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

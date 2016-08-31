@@ -51,6 +51,7 @@ public class ActivityRecognitionService extends IntentService {
                     break;
                 }
                 case DetectedActivity.WALKING: {
+
                     Log.e( "ActivityRecogition", "Walking: " + activity.getConfidence() );
                     if( activity.getConfidence() >= 75 ) {
                         NotificationCompat.Builder builder = new NotificationCompat.Builder(this);

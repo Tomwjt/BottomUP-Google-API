@@ -32,18 +32,20 @@ public class LoginActivity extends AppCompatActivity {
 
         Person p = new Person("Tom", 25, "male", "tomwjt");
         dao.insertPerson(p);
+        ActivityLog activityLog = new ActivityLog("Tom", "01/01/2017", "120", "60");
+        dao.insertActivityLog(activityLog);
 
 
     }
 
-    public void accountLogin(View v){
+    public void accountLogin(View v) {
 
         String accountName = mLogin.getText().toString();
         String passwordEntered = mPassword.getText().toString();
         String passwordCorrect;
         Cursor c;
 
-        if(dao.checkAccounts() == true) {
+        if (dao.checkAccounts() == true) {
 
             try {
 
@@ -53,14 +55,14 @@ public class LoginActivity extends AppCompatActivity {
                 if (passwordCorrect.equals(passwordEntered) == true) {
                     Intent myIntent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(myIntent);
-               }
+                }
 
             } catch (Exception e) {
                 Toast errorMessage = Toast.makeText(this, "Invalid Account Name or Password", Toast.LENGTH_LONG);
                 errorMessage.show();
             }
 
-        } else{
+        } else {
             Toast errorMessage = Toast.makeText(this, "No Active Accounts", Toast.LENGTH_LONG);
             errorMessage.show();
         }
@@ -68,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void createAccount(View v){
+    public void createAccount(View v) {
         Intent myIntent = new Intent(LoginActivity.this, AccountCreationActivity.class);
         startActivity(myIntent);
 
